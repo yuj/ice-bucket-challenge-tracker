@@ -15,7 +15,7 @@
         }
 
         .node text {
-            font-size: 14px;
+            font-size: 16px;
         }
 
         path.link {
@@ -29,13 +29,13 @@
 
 <body screen_capture_injected="true">
 <div id="body">
-    <h1>ALS Ice Bucket Challenge Tracker</h1>
+    <div>ALS Ice Bucket Challenge Tracker</div>
 
     <script type="text/javascript">
 
-        var m = [20, 120, 20, 120],
+        var m = [20, 150, 20, 100],
                 w = 1440 - m[1] - m[3],
-                h = 800 - m[0] - m[2],
+                h = 600 - m[0] - m[2],
                 i = 0,
                 root;
 
@@ -50,7 +50,7 @@
                 .attr("width", w + m[1] + m[3])
                 .attr("height", h + m[0] + m[2])
                 .append("svg:g")
-                .attr("transform", "translate(" + m[3] + "," + m[0] + ")");
+                .attr("transform", "translate(" + m[1] + "," + m[0] + ")");
 
         d3.json("people.json", function (json) {
             root = json;
