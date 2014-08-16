@@ -1,0 +1,32 @@
+{
+    "name": "Mark Zuckerberg",
+    "video": "",
+    "children": [
+        {
+            "name": "Bill Gates",
+            "video": "",
+            "children": [
+                {
+                    "name": "Elon Musk",
+                    "video": ""
+                },
+                {
+                    "name": "Ryan Seacrest",
+                    "video": ""
+                },
+                {
+                    "name": "Chris Anderson",
+                    "video": ""
+                }
+            ]
+        },
+        {
+            "name": "Sheryl Sandberg",
+            "video": ""
+        },
+        {
+            "name": "Reed Hastings",
+            "video": ""
+        }
+    ]
+}

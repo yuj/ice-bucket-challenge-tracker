@@ -1,79 +1,207 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Ice Bucket Challenge Tracker : ">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link type="text/css" rel="stylesheet" href="stylesheets/style.css">
+    <script type="text/javascript" src="javascripts/d3.js"></script>
+    <script type="text/javascript" src="javascripts/d3.layout.js"></script>
+    <style>
+        .node circle {
+            cursor: pointer;
+            fill: #fff;
+            stroke: steelblue;
+            stroke-width: 1.5px;
+        }
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+        .node text {
+            font-size: 14px;
+        }
 
-    <title>Ice Bucket Challenge Tracker</title>
-  </head>
+        path.link {
+            fill: none;
+            stroke: #ccc;
+            stroke-width: 1.5px;
+        }
+    </style>
+</head>
 
-  <body>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/yuj/ice-bucket-challenge-tracker">View on GitHub</a>
+<body screen_capture_injected="true">
+<div id="body">
+    <h1>ALS Ice Bucket Challenge Tracker</h1>
 
-          <h1 id="project_title">Ice Bucket Challenge Tracker</h1>
-          <h2 id="project_tagline"></h2>
+    <script type="text/javascript">
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/yuj/ice-bucket-challenge-tracker/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/yuj/ice-bucket-challenge-tracker/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
+        var m = [20, 120, 20, 120],
+                w = 1440 - m[1] - m[3],
+                h = 800 - m[0] - m[2],
+                i = 0,
+                root;
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+        var tree = d3.layout.tree().size([h, w]);
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+        var diagonal = d3.svg.diagonal()
+                .projection(function (d) {
+                    return [d.y, d.x];
+                });
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+        var vis = d3.select("#body").append("svg:svg")
+                .attr("width", w + m[1] + m[3])
+                .attr("height", h + m[0] + m[2])
+                .append("svg:g")
+                .attr("transform", "translate(" + m[3] + "," + m[0] + ")");
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+        d3.json("people.json", function (json) {
+            root = json;
+            root.x0 = h / 2;
+            root.y0 = 0;
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+            function toggleAll(d) {
+                if (d.children) {
+                    d.children.forEach(toggleAll);
+                    toggle(d);
+                }
+            }
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+            // Initialize the display to show a few nodes.
+            root.children.forEach(toggleAll);
+            toggle(root.children[0]);
+            toggle(root.children[0].children[0]);
+            toggle(root.children[0].children[1]);
+            toggle(root.children[0].children[2]);
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+            update(root);
+        });
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+        function update(source) {
+            var duration = d3.event && d3.event.altKey ? 5000 : 500;
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+            // Compute the new tree layout.
+            var nodes = tree.nodes(root).reverse();
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+            // Normalize for fixed-depth.
+            nodes.forEach(function (d) {
+                d.y = d.depth * 180;
+            });
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+            // Update the nodes…
+            var node = vis.selectAll("g.node")
+                    .data(nodes, function (d) {
+                        return d.id || (d.id = ++i);
+                    });
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
+            // Enter any new nodes at the parent's previous position.
+            var nodeEnter = node.enter().append("svg:g")
+                    .attr("class", "node")
+                    .attr("transform", function (d) {
+                        return "translate(" + source.y0 + "," + source.x0 + ")";
+                    })
+                    .on("click", function (d) {
+                        toggle(d);
+                        update(d);
+                    });
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Ice Bucket Challenge Tracker maintained by <a href="https://github.com/yuj">yuj</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
+            nodeEnter.append("svg:circle")
+                    .attr("r", 1e-6)
+                    .style("fill", function (d) {
+                        return d._children ? "lightsteelblue" : "#fff";
+                    });
 
-    
+            nodeEnter.append("svg:text")
+                    .attr("x", function (d) {
+                        return d.children || d._children ? -10 : 10;
+                    })
+                    .attr("dy", ".35em")
+                    .attr("text-anchor", function (d) {
+                        return d.children || d._children ? "end" : "start";
+                    })
+                    .text(function (d) {
+                        return d.name;
+                    })
+                    .style("fill-opacity", 1e-6);
 
-  </body>
+            // Transition nodes to their new position.
+            var nodeUpdate = node.transition()
+                    .duration(duration)
+                    .attr("transform", function (d) {
+                        return "translate(" + d.y + "," + d.x + ")";
+                    });
+
+            nodeUpdate.select("circle")
+                    .attr("r", 4.5)
+                    .style("fill", function (d) {
+                        return d._children ? "lightsteelblue" : "#fff";
+                    });
+
+            nodeUpdate.select("text")
+                    .style("fill-opacity", 1);
+
+            // Transition exiting nodes to the parent's new position.
+            var nodeExit = node.exit().transition()
+                    .duration(duration)
+                    .attr("transform", function (d) {
+                        return "translate(" + source.y + "," + source.x + ")";
+                    })
+                    .remove();
+
+            nodeExit.select("circle")
+                    .attr("r", 1e-6);
+
+            nodeExit.select("text")
+                    .style("fill-opacity", 1e-6);
+
+            // Update the links…
+            var link = vis.selectAll("path.link")
+                    .data(tree.links(nodes), function (d) {
+                        return d.target.id;
+                    });
+
+            // Enter any new links at the parent's previous position.
+            link.enter().insert("svg:path", "g")
+                    .attr("class", "link")
+                    .attr("d", function (d) {
+                        var o = {x: source.x0, y: source.y0};
+                        return diagonal({source: o, target: o});
+                    })
+                    .transition()
+                    .duration(duration)
+                    .attr("d", diagonal);
+
+            // Transition links to their new position.
+            link.transition()
+                    .duration(duration)
+                    .attr("d", diagonal);
+
+            // Transition exiting nodes to the parent's new position.
+            link.exit().transition()
+                    .duration(duration)
+                    .attr("d", function (d) {
+                        var o = {x: source.x, y: source.y};
+                        return diagonal({source: o, target: o});
+                    })
+                    .remove();
+
+            // Stash the old positions for transition.
+            nodes.forEach(function (d) {
+                d.x0 = d.x;
+                d.y0 = d.y;
+            });
+        }
+
+        // Toggle children.
+        function toggle(d) {
+            if (d.children) {
+                d._children = d.children;
+                d.children = null;
+            } else {
+                d.children = d._children;
+                d._children = null;
+            }
+        }
+
+    </script>
+
+</div>
+</body>
 </html>
