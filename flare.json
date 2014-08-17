@@ -58,10 +58,28 @@
             "children": [
                 {
                     "name": "Jeff Bezos",
-                    "url": "http://youtu.be/DFVezzjAhFY"
+                    "url": "http://youtu.be/DFVezzjAhFY",
+                    "children": [
+                        {
+                            "name": "William Shatner",
+                            "url": ""
+                        },
+                        {
+                            "name": "Patrick Stewart",
+                            "url": ""
+                        },
+                        {
+                            "name": "George Takei",
+                            "url": ""
+                        }
+                    ]
                 },
                 {
-                    "name": "Page and Brin",
+                    "name": "Larry Page",
+                    "url": "http://youtu.be/D9QYepYfGxo"
+                },
+                {
+                    "name": "Sergy Brin",
                     "url": "http://youtu.be/D9QYepYfGxo"
                 }
             ]
