@@ -26,7 +26,25 @@
                 },
                 {
                     "name": "Sheryl Sandberg",
-                    "url": ""
+                    "url": "",
+                    "children": [
+                        {
+                            "name": "Kara Swisher",
+                            "url": ""
+                        },
+                        {
+                            "name": "Sue Desmond-Hellmann",
+                            "url": ""
+                        },
+                        {
+                            "name": "Melinda Gates",
+                            "url": ""
+                        },
+                        {
+                            "name": "Jocelyn Goldfein",
+                            "url": ""
+                        }
+                    ]
                 },
                 {
                     "name": "Reed Hastings",
