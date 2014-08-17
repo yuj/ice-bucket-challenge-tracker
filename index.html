@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:xlink="http://www.w3.org/1999/xlink">
+<html>
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -117,9 +117,7 @@
                         return d._children ? "lightsteelblue" : "#fff";
                     });
 
-            nodeEnter.append("svg:a")
-                    .attr("xlink:href", function(d){return d.url;})
-                    .append("svg:text")
+            nodeEnter.append("svg:text")
                     .attr("x", function (d) {
                         return d.children || d._children ? -10 : 10;
                     })
@@ -132,7 +130,7 @@
                     })
                     .style("fill-opacity", 1e-6)
                     .attr("class", "hyper")
-                    .on("click", null);
+                    .on("click", nodeTextClicked);
 
 
             // Transition nodes to their new position.
@@ -204,8 +202,8 @@
         }
 
         function nodeTextClicked(d) {
-            var win = window.open(d.url, '_blank');
-            win.focus();
+            event.stopPropagation();
+            window.open(d.url, "_self");
         }
 
         // Toggle children.
