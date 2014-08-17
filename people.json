@@ -1,32 +1,32 @@
 {
     "name": "Mark Zuckerberg",
-    "video": "",
+    "url": "http://youtu.be/6TTpXKFBkjk",
     "children": [
         {
             "name": "Bill Gates",
-            "video": "",
+            "url": "http://youtu.be/XS6ysDFTbLU",
             "children": [
                 {
                     "name": "Elon Musk",
-                    "video": ""
+                    "url": "http://youtu.be/htDFMTSEDGU"
                 },
                 {
                     "name": "Ryan Seacrest",
-                    "video": ""
+                    "url": ""
                 },
                 {
                     "name": "Chris Anderson",
-                    "video": ""
+                    "url": ""
                 }
             ]
         },
         {
             "name": "Sheryl Sandberg",
-            "video": ""
+            "url": ""
         },
         {
             "name": "Reed Hastings",
-            "video": ""
+            "url": ""
         }
     ]
 }

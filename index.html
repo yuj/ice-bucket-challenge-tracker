@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:xlink="http://www.w3.org/1999/xlink">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -16,6 +16,15 @@
 
         .node text {
             font-size: 16px;
+        }
+        .hyper {
+            color: blue;
+            text-decoration: none;
+        }
+
+        .hyper:hover {
+            color: yellow;
+            text-decoration: underline;
         }
 
         path.link {
@@ -82,7 +91,7 @@
 
             // Normalize for fixed-depth.
             nodes.forEach(function (d) {
-                d.y = d.depth * 180;
+                d.y = d.depth * 150;
             });
 
             // Update the nodes…
@@ -108,7 +117,9 @@
                         return d._children ? "lightsteelblue" : "#fff";
                     });
 
-            nodeEnter.append("svg:text")
+            nodeEnter.append("svg:a")
+                    .attr("xlink:href", function(d){return d.url;})
+                    .append("svg:text")
                     .attr("x", function (d) {
                         return d.children || d._children ? -10 : 10;
                     })
@@ -119,7 +130,10 @@
                     .text(function (d) {
                         return d.name;
                     })
-                    .style("fill-opacity", 1e-6);
+                    .style("fill-opacity", 1e-6)
+                    .attr("class", "hyper")
+                    .on("click", null);
+
 
             // Transition nodes to their new position.
             var nodeUpdate = node.transition()
@@ -187,6 +201,11 @@
                 d.x0 = d.x;
                 d.y0 = d.y;
             });
+        }
+
+        function nodeTextClicked(d) {
+            var win = window.open(d.url, '_blank');
+            win.focus();
         }
 
         // Toggle children.
