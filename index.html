@@ -29,6 +29,38 @@
             stroke: #ccc;
             stroke-width: 1.5px;
         }
+
+        .ribbon {
+          background-color: #a00;
+          overflow: hidden;
+          white-space: nowrap;
+          /* top left corner */
+          position: absolute;
+          right: -50px;
+          top: 40px;
+          /* 45 deg cw rotation */
+          -webkit-transform: rotate(45deg);
+             -moz-transform: rotate(45deg);
+              -ms-transform: rotate(45deg);
+               -o-transform: rotate(45deg);
+                  transform: rotate(45deg);
+          /* shadow */
+          -webkit-box-shadow: 0 0 10px #888;
+             -moz-box-shadow: 0 0 10px #888;
+                  box-shadow: 0 0 10px #888;
+        }
+        .ribbon a {
+          border: 1px solid #faa;
+          color: #fff;
+          display: block;
+          font: bold 81.25% 'Helvetica Neue', Helvetica, Arial, sans-serif;
+          margin: 1px 0;
+          padding: 10px 50px;
+          text-align: center;
+          text-decoration: none;
+          /* shadow */
+          text-shadow: 0 0 5px #444;
+        }
     </style>
 
 </head>
@@ -36,19 +68,22 @@
 
 <body>
 
-<!-- Facebook like button script -->
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=786367268079992&version=v2.0";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+    <!-- Facebook like button script -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=786367268079992&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
 
     <h2>ALS Ice Bucket Challenge Tracker</h2>
     <p>Click bold names to watch their video. Click circle to expand or collapse node.</p>
-    <a href="https://github.com/yuj/ice-bucket-challenge-tracker"><img style="position: absolute; top: 0; right: 0; border: 0; width: 149px; height: 149px;" src="http://aral.github.com/fork-me-on-github-retina-ribbons/right-green@2x.png" alt="Fork me on GitHub"></a>
+
+    <div class="ribbon">
+        <a href="#">Fork me on GitHub</a>
+    </div>
 
     <div>
         <div style="display: inline-block; padding-bottom: 3px">

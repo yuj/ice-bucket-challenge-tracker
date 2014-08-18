@@ -1,8 +1,8 @@
 body {
-  /*overflow: hidden;*/
+  overflow: hidden;
   margin: 10;
   font-size: 14px;
-  font-family: "Helvetica", Helvetica;
+  font-family: "Helvetica Neue", Helvetica;
 }
 
 /*rect {*/
