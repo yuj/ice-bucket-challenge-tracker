@@ -9,6 +9,10 @@
     <script type="text/javascript" src="javascripts/d3.layout.js"></script>
 
     <style>
+        .twitter-share-button {
+            position: relative;
+            top: 3px;
+        }
         .node circle {
             cursor: pointer;
             fill: #fff;
@@ -44,14 +48,14 @@
 
     <h2>ALS Ice Bucket Challenge Tracker</h2>
     <p>Click bold names to watch their video. Click circle to expand or collapse node.</p>
-    <a href="https://github.com/yuj/ice-bucket-challenge-tracker"><img style="position: absolute; top: 0; right: 0; border: 0; width: 149px; height: 149px;" src="http://aral.github.com/fork-me-on-github-retina-ribbons/right-green@2x.png" alt="Fork me on GitHub"></a>    <!--<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fyuj.github.io%2Fice-bucket-challenge-tracker%2F&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=21&amp;appId=786367268079992" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe>-->
+    <a href="https://github.com/yuj/ice-bucket-challenge-tracker"><img style="position: absolute; top: 0; right: 0; border: 0; width: 149px; height: 149px;" src="http://aral.github.com/fork-me-on-github-retina-ribbons/right-green@2x.png" alt="Fork me on GitHub"></a>
 
     <div>
-        <div style="display: inline-block; vertical-align: middle">
+        <div style="display: inline-block; padding-bottom: 3px">
             <!-- facebook like button -->
             <div class="fb-like" data-href="http://yuj.github.io/ice-bucket-challenge-tracker/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
         </div>
-        <div style="display: inline-block; vertical-align: middle">
+        <div style="display: inline-block; ">
             <!-- tweet button -->
             <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://yuj.github.io/ice-bucket-challenge-tracker/" data-text="Check out this ice bucket challenge tracker" data-hashtags="icebctracker">Tweet</a>
             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
