@@ -112,7 +112,21 @@
                 },
                 {
                     "name": "Dr. Dre",
-                    "url": "http://youtu.be/fM8iK3QJfhg"
+                    "url": "http://youtu.be/fM8iK3QJfhg",
+                    "children": [
+                        {
+                            "name": "Eminem",
+                            "url": ""
+                        },
+                        {
+                            "name": "Snoop Dogg",
+                            "url": ""
+                        },
+                        {
+                            "name": "Kendrick Lamar",
+                            "url": ""
+                        }
+                    ]
                 }
             ]
         },
