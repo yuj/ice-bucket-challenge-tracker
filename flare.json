@@ -115,6 +115,30 @@
                     "url": "http://youtu.be/fM8iK3QJfhg"
                 }
             ]
+        },
+        {
+            "name": "Xiaomi 雷軍",
+            "url": "http://youtu.be/ojZUg-CZHok",
+            "children": [
+                {
+                    "name": "Foxconn 郭台銘",
+                    "url": "http://youtu.be/Hj8uKcdj5N4",
+                    "children": [
+                        {
+                            "name": "林志玲",
+                            "url": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "劉德華",
+                    "url": ""
+                },
+                {
+                    "name": "Baidu 李彥宏",
+                    "url": ""
+                }
+            ]
         }
     ]
 }
