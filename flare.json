@@ -104,7 +104,21 @@
             "children": [
                 {
                     "name": "Michael Franti",
-                    "url": "http://youtu.be/uk-JADHkHlI"
+                    "url": "http://youtu.be/uk-JADHkHlI",
+                    "children": [
+                        {
+                            "name": "Woody Harrelson",
+                            "url": ""
+                        },
+                        {
+                            "name": "Oprah Winfrey",
+                            "url": ""
+                        },
+                        {
+                            "name": "U2 Bono",
+                            "url": ""
+                        }
+                    ]
                 },
                 {
                     "name": "Bob Iger",
