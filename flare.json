@@ -178,7 +178,21 @@
                 },
                 {
                     "name": "Baidu 李彥宏",
-                    "url": ""
+                    "url": "http://v.qq.com/page/r/9/m/r0015aogf9m.html",
+                    "children": [
+                        {
+                            "name": "俞敏洪",
+                            "url": ""
+                        },
+                        {
+                            "name": "田亮",
+                            "url": ""
+                        },
+                        {
+                            "name": "潘石屹",
+                            "url": ""
+                        }
+                    ]
                 }
             ]
         }
