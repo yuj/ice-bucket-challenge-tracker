@@ -112,7 +112,7 @@
                         },
                         {
                             "name": "Oprah Winfrey",
-                            "url": ""
+                            "url": "http://youtu.be/FAEsNGjkwW8"
                         },
                         {
                             "name": "U2 Bono",
@@ -134,7 +134,7 @@
                         },
                         {
                             "name": "Olivia Pope",
-                            "url": ""
+                            "url": "http://youtu.be/CZYyiuBjZs4"
                         }
                     ]
                 },
@@ -144,7 +144,7 @@
                     "children": [
                         {
                             "name": "Eminem",
-                            "url": ""
+                            "url": "http://youtu.be/tIG7L-jc0w0"
                         },
                         {
                             "name": "Snoop Dogg",
@@ -171,8 +171,8 @@
                             "url": ""
                         },
                         {
-                            "name": "孫正義",
-                            "url": ""
+                            "name": "Softbank Masayoshi Son",
+                            "url": "http://youtu.be/vf9sZXW1QnM"
                         },
                         {
                             "name": "謝曉亮",
@@ -181,8 +181,32 @@
                     ]
                 },
                 {
-                    "name": "劉德華",
-                    "url": ""
+                    "name": "Andy Lau 劉德華",
+                    "url": "http://youtu.be/Mt3FBZ_wZbU"，
+                    "children": [
+                        {
+                            "name": "Lang Lang 朗朗",
+                            "url": ""
+                        },
+                        {
+                            "name": "蘇樺偉",
+                            "url": ""
+                        },
+                        {
+                            "name": "Jay Chou 周杰倫",
+                            "url": "http://youtu.be/ZTZ2Y3xJG08",
+                            "children": [
+                                {
+                                    "name": "方文山",
+                                    "url": "http://youtu.be/EIsVVHUGwTA"
+                                },
+                                {
+                                    "name": "五月天",
+                                    "url": "http://youtu.be/jBnkBcMkWm4"
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     "name": "Baidu 李彥宏",
