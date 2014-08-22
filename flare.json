@@ -3,256 +3,187 @@
     "url": "",
     "children": [
         {
-            "name": "Mark Zuckerberg",
-            "title": "Facebook",
-            "url": "http://youtu.be/6TTpXKFBkjk",
+            "name": "Mark Zuckerberg", "title": "Facebook", "url": "http://youtu.be/6TTpXKFBkjk",
             "children": [
                 {
-                    "name": "Bill Gates",
-                    "title": "Microsoft",
-                    "url": "http://youtu.be/XS6ysDFTbLU",
+                    "name": "Bill Gates", "title": "Microsoft", "url": "http://youtu.be/XS6ysDFTbLU",
                     "children": [
                         {
-                            "name": "Elon Musk",
-                            "title": "Tesla",
-                            "url": "http://youtu.be/htDFMTSEDGU",
+                            "name": "Elon Musk", "title": "Tesla", "url": "http://youtu.be/htDFMTSEDGU",
                             "children": [
                                 {
-                                    "name": "Markus Persson",
-                                    "title": "Minecraft",
-                                    "url": "http://youtu.be/ObqgqdAQ8-4"
+                                    "name": "Markus Persson", "title": "Minecraft", "url": "http://youtu.be/ObqgqdAQ8-4"
                                 },
                                 {
-                                    "name": "Johnny Depp",
-                                    "url": ""
+                                    "name": "Johnny Depp", "url": ""
                                 },
                                 {
-                                    "name": "Tony Hawk",
-                                    "url": ""
+                                    "name": "Tony Hawk", "url": ""
                                 }
                             ]
                         },
                         {
-                            "name": "Ryan Seacrest",
-                            "url": "http://youtu.be/-tnywhcDaAc"
+                            "name": "Ryan Seacrest", "url": "http://youtu.be/-tnywhcDaAc"
                         },
                         {
-                            "name": "Chris Anderson",
-                            "url": "http://youtu.be/83wnnTQfUMc"
+                            "name": "Chris Anderson", "url": "http://youtu.be/83wnnTQfUMc"
                         }
                     ]
                 },
                 {
-                    "name": "Sheryl Sandberg",
-                    "title": "Facebook",
-                    "url": "",
+                    "name": "Sheryl Sandberg", "title": "Facebook", "url": "",
                     "children": [
                         {
-                            "name": "Kara Swisher",
-                            "url": "http://youtu.be/0d16ZlPzazQ"
+                            "name": "Kara Swisher", "url": "http://youtu.be/0d16ZlPzazQ"
                         },
                         {
-                            "name": "Sue Desmond-Hellmann",
-                            "url": "http://youtu.be/o_uFYHg4n9o"
+                            "name": "Sue Desmond-Hellmann", "url": "http://youtu.be/o_uFYHg4n9o"
                         },
                         {
-                            "name": "Melinda Gates",
-                            "url": "http://youtu.be/v5Vo9k6BPn4"
+                            "name": "Melinda Gates", "url": "http://youtu.be/v5Vo9k6BPn4"
                         },
                         {
-                            "name": "Jocelyn Goldfein",
-                            "url": ""
+                            "name": "Jocelyn Goldfein", "url": ""
                         }
                     ]
                 },
                 {
-                    "name": "Reed Hastings",
-                    "title": "Netflix",
-                    "url": "http://youtu.be/T-6Sx_RKUkQ"
+                    "name": "Reed Hastings", "title": "Netflix", "url": "http://youtu.be/T-6Sx_RKUkQ"
                 }
             ]
         },
         {
-            "name": "Satya Nadella",
-            "title": "Microsoft",
-            "url": "http://youtu.be/3YDxB6hXWYc",
+            "name": "Satya Nadella", "title": "Microsoft", "url": "http://youtu.be/3YDxB6hXWYc",
             "children": [
                 {
-                    "name": "Jeff Bezos",
-                    "title": "Amazon",
-                    "url": "http://youtu.be/DFVezzjAhFY",
+                    "name": "Jeff Bezos", "title": "Amazon", "url": "http://youtu.be/DFVezzjAhFY",
                     "children": [
                         {
-                            "name": "William Shatner",
-                            "url": "http://youtu.be/ASA1entQEjU"
+                            "name": "William Shatner", "url": "http://youtu.be/ASA1entQEjU"
                         },
                         {
-                            "name": "Patrick Stewart",
-                            "url": ""
+                            "name": "Patrick Stewart", "url": ""
                         },
                         {
-                            "name": "George Takei",
-                            "url": "http://youtu.be/k9cJhiplS0c"
+                            "name": "George Takei", "url": "http://youtu.be/k9cJhiplS0c"
                         }
                     ]
                 },
                 {
-                    "name": "Larry Page",
-                    "title": "Google",
-                    "url": "http://youtu.be/D9QYepYfGxo"
+                    "name": "Larry Page", "title": "Google", "url": "http://youtu.be/D9QYepYfGxo"
                 },
                 {
-                    "name": "Sergy Brin",
-                    "title": "Google",
-                    "url": "http://youtu.be/D9QYepYfGxo"
+                    "name": "Sergy Brin", "title": "Google", "url": "http://youtu.be/D9QYepYfGxo"
                 }
             ]
         },
         {
-            "name": "Tim Cook",
-            "title": "Apple",
-            "url": "http://youtu.be/uk-JADHkHlI",
+            "name": "Tim Cook", "title": "Apple", "url": "http://youtu.be/uk-JADHkHlI",
             "children": [
                 {
-                    "name": "Michael Franti",
-                    "url": "http://youtu.be/uk-JADHkHlI",
+                    "name": "Michael Franti", "url": "http://youtu.be/uk-JADHkHlI",
                     "children": [
                         {
-                            "name": "Woody Harrelson",
-                            "url": ""
+                            "name": "Woody Harrelson", "url": ""
                         },
                         {
-                            "name": "Oprah Winfrey",
-                            "url": "http://youtu.be/FAEsNGjkwW8"
+                            "name": "Oprah Winfrey", "url": "http://youtu.be/FAEsNGjkwW8"
                         },
                         {
-                            "name": "U2 Bono",
-                            "url": ""
+                            "name": "U2 Bono", "url": ""
                         }
                     ]
                 },
                 {
-                    "name": "Bob Iger",
-                    "title": "Disney",
-                    "url": "http://youtu.be/FAx03hNqic8",
+                    "name": "Bob Iger", "title": "Disney", "url": "http://youtu.be/FAx03hNqic8",
                     "children": [
                         {
-                            "name": "Peter Quill",
-                            "url": ""
+                            "name": "Peter Quill", "url": ""
                         },
                         {
-                            "name": "Tony Stark",
-                            "url": ""
+                            "name": "Tony Stark", "url": ""
                         },
                         {
-                            "name": "Olivia Pope",
-                            "url": "http://youtu.be/CZYyiuBjZs4"
+                            "name": "Olivia Pope", "url": "http://youtu.be/CZYyiuBjZs4"
                         }
                     ]
                 },
                 {
-                    "name": "Dr. Dre",
-                    "url": "http://youtu.be/fM8iK3QJfhg",
+                    "name": "Dr. Dre", "url": "http://youtu.be/fM8iK3QJfhg",
                     "children": [
                         {
-                            "name": "Eminem",
-                            "url": "http://youtu.be/tIG7L-jc0w0"
+                            "name": "Eminem", "url": "http://youtu.be/tIG7L-jc0w0"
                         },
                         {
-                            "name": "Snoop Dogg",
-                            "url": ""
+                            "name": "Snoop Dogg", "url": ""
                         },
                         {
-                            "name": "Kendrick Lamar",
-                            "url": ""
+                            "name": "Kendrick Lamar", "url": ""
                         }
                     ]
                 }
             ]
         },
         {
-            "name": "雷軍",
-            "title": "Xiaomi",
-            "url": "http://youtu.be/ojZUg-CZHok",
+            "name": "雷軍", "title": "Xiaomi", "url": "http://youtu.be/ojZUg-CZHok",
             "children": [
                 {
-                    "name": "郭台銘",
-                    "title": "Foxconn",
-                    "url": "http://youtu.be/Hj8uKcdj5N4",
+                    "name": "郭台銘", "title": "Foxconn", "url": "http://youtu.be/Hj8uKcdj5N4",
                     "children": [
                         {
-                            "name": "林志玲",
-                            "url": ""
+                            "name": "林志玲", "url": ""
                         },
                         {
-                            "name": "Masayoshi Son",
-                            "title": "Softbank",
-                            "url": "http://youtu.be/vf9sZXW1QnM"
+                            "name": "Masayoshi Son", "title": "Softbank", "url": "http://youtu.be/vf9sZXW1QnM"
                         },
                         {
-                            "name": "謝曉亮",
-                            "url": ""
+                            "name": "謝曉亮", "url": ""
                         }
                     ]
                 },
                 {
-                    "name": "Andy Lau 劉德華",
-                    "url": "http://youtu.be/Mt3FBZ_wZbU",
+                    "name": "Andy Lau 劉德華", "url": "http://youtu.be/Mt3FBZ_wZbU",
                     "children": [
                         {
-                            "name": "Lang Lang 朗朗",
-                            "url": ""
+                            "name": "Lang Lang 朗朗", "url": ""
                         },
                         {
-                            "name": "蘇樺偉",
-                            "url": ""
+                            "name": "蘇樺偉", "url": ""
                         },
                         {
-                            "name": "Jay Chou 周杰倫",
-                            "url": "http://youtu.be/ZTZ2Y3xJG08",
+                            "name": "Jay Chou 周杰倫", "url": "http://youtu.be/ZTZ2Y3xJG08",
                             "children": [
                                 {
-                                    "name": "方文山",
-                                    "url": "http://youtu.be/EIsVVHUGwTA"
+                                    "name": "方文山", "url": "http://youtu.be/EIsVVHUGwTA"
                                 },
                                 {
-                                    "name": "五月天",
-                                    "url": "http://youtu.be/jBnkBcMkWm4"
+                                    "name": "五月天", "url": "http://youtu.be/jBnkBcMkWm4"
                                 }
                             ]
                         }
                     ]
                 },
                 {
-                    "name": "李彥宏",
-                    "title": "Baidu",
-                    "url": "http://v.qq.com/page/r/9/m/r0015aogf9m.html",
+                    "name": "李彥宏", "title": "Baidu", "url": "http://v.qq.com/page/r/9/m/r0015aogf9m.html",
                     "children": [
                         {
-                            "name": "俞敏洪",
-                            "url": ""
+                            "name": "俞敏洪", "url": ""
                         },
                         {
-                            "name": "田亮",
-                            "url": ""
+                            "name": "田亮", "url": ""
                         },
                         {
-                            "name": "潘石屹",
-                            "url": ""
+                            "name": "潘石屹", "url": ""
                         }
                     ]
                 }
             ]
         },
         {
-            "name": "George W. Bush",
-            "title": "USA President",
-            "url": "https://www.facebook.com/georgewbush",
+            "name": "George W. Bush", "title": "USA President", "url": "https://www.facebook.com/georgewbush",
             "children": [
                 {
-                    "name": "Bill Clinton",
-                    "title": "USA President",
-                    "url": ""
+                    "name": "Bill Clinton", "title": "USA President", "url": ""
                 }
             ]
         }
