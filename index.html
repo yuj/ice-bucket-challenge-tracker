@@ -111,11 +111,15 @@
 
         var m = [0, 100, 0, 100],
                 w = 1440 - m[1] - m[3],
-                h = 800 - m[0] - m[2],
+                h = 1200 - m[0] - m[2],
                 i = 0,
                 root;
 
-        var tree = d3.layout.tree().size([h, w]);
+        var tree = d3.layout.tree()
+                .separation(function separation(a, b) {
+                    return a.parent == b.parent ? 40 : 40;
+                })
+                .size([h, w]);
 
         var diagonal = d3.svg.diagonal()
                 .projection(function (d) {
@@ -212,6 +216,21 @@
                     })
                     .on("click", nodeTextClicked);
 
+            nodeEnter.append("svg:text")
+                    .attr("x", function (d) {
+                        return d.children || d._children ? -10 : 10;
+                    })
+                    .attr("dy", "1.35em")
+                    .attr("text-anchor", function (d) {
+                        return d.children || d._children ? "end" : "start";
+                    })
+                    .text(function (d) {
+                        return d.title ? d.title : "";
+                    })
+                    .style("fill-opacity", 1e-6)
+                    .attr("font-size", 10)
+                    .attr("font-style", "italic")
+                    .attr("font-weight", 200)
 
             // Transition nodes to their new position.
             var nodeUpdate = node.transition()
@@ -226,7 +245,7 @@
                         return d._children ? "lightsteelblue" : "#fff";
                     });
 
-            nodeUpdate.select("text")
+            nodeUpdate.selectAll("text")
                     .style("fill-opacity", 1);
 
             // Transition exiting nodes to the parent's new position.
@@ -240,7 +259,7 @@
             nodeExit.select("circle")
                     .attr("r", 1e-6);
 
-            nodeExit.select("text")
+            nodeExit.selectAll("text")
                     .style("fill-opacity", 1e-6);
 
             // Update the links…

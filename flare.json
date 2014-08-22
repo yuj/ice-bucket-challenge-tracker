@@ -4,18 +4,22 @@
     "children": [
         {
             "name": "Mark Zuckerberg",
+            "title": "Facebook",
             "url": "http://youtu.be/6TTpXKFBkjk",
             "children": [
                 {
                     "name": "Bill Gates",
+                    "title": "Microsoft",
                     "url": "http://youtu.be/XS6ysDFTbLU",
                     "children": [
                         {
                             "name": "Elon Musk",
+                            "title": "Tesla",
                             "url": "http://youtu.be/htDFMTSEDGU",
                             "children": [
                                 {
                                     "name": "Markus Persson",
+                                    "title": "Minecraft",
                                     "url": "http://youtu.be/ObqgqdAQ8-4"
                                 },
                                 {
@@ -40,6 +44,7 @@
                 },
                 {
                     "name": "Sheryl Sandberg",
+                    "title": "Facebook",
                     "url": "",
                     "children": [
                         {
@@ -62,16 +67,19 @@
                 },
                 {
                     "name": "Reed Hastings",
+                    "title": "Netflix",
                     "url": "http://youtu.be/T-6Sx_RKUkQ"
                 }
             ]
         },
         {
             "name": "Satya Nadella",
+            "title": "Microsoft",
             "url": "http://youtu.be/3YDxB6hXWYc",
             "children": [
                 {
                     "name": "Jeff Bezos",
+                    "title": "Amazon",
                     "url": "http://youtu.be/DFVezzjAhFY",
                     "children": [
                         {
@@ -90,16 +98,19 @@
                 },
                 {
                     "name": "Larry Page",
+                    "title": "Google",
                     "url": "http://youtu.be/D9QYepYfGxo"
                 },
                 {
                     "name": "Sergy Brin",
+                    "title": "Google",
                     "url": "http://youtu.be/D9QYepYfGxo"
                 }
             ]
         },
         {
             "name": "Tim Cook",
+            "title": "Apple",
             "url": "http://youtu.be/uk-JADHkHlI",
             "children": [
                 {
@@ -122,6 +133,7 @@
                 },
                 {
                     "name": "Bob Iger",
+                    "title": "Disney",
                     "url": "http://youtu.be/FAx03hNqic8",
                     "children": [
                         {
@@ -159,11 +171,13 @@
             ]
         },
         {
-            "name": "Xiaomi 雷軍",
+            "name": "雷軍",
+            "title": "Xiaomi",
             "url": "http://youtu.be/ojZUg-CZHok",
             "children": [
                 {
-                    "name": "Foxconn 郭台銘",
+                    "name": "郭台銘",
+                    "title": "Foxconn",
                     "url": "http://youtu.be/Hj8uKcdj5N4",
                     "children": [
                         {
@@ -171,7 +185,8 @@
                             "url": ""
                         },
                         {
-                            "name": "Softbank Masayoshi Son",
+                            "name": "Masayoshi Son",
+                            "title": "Softbank",
                             "url": "http://youtu.be/vf9sZXW1QnM"
                         },
                         {
@@ -209,7 +224,8 @@
                     ]
                 },
                 {
-                    "name": "Baidu 李彥宏",
+                    "name": "李彥宏",
+                    "title": "Baidu",
                     "url": "http://v.qq.com/page/r/9/m/r0015aogf9m.html",
                     "children": [
                         {
