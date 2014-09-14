@@ -135,7 +135,7 @@
 
             // Normalize for fixed-depth.
             nodes.forEach(function (d) {
-                d.y = d.depth * 180;
+                d.y = d.depth * 200;
             });
 
             // Update the nodes…
@@ -193,9 +193,9 @@
                         return d.title ? d.title : "";
                     })
                     .style("fill-opacity", 1e-6)
-                    .attr("font-size", 10)
+                    .attr("font-size", 6)
                     .attr("font-style", "italic")
-                    .attr("font-weight", 200)
+                    .attr("font-weight", 100)
 
             // Transition nodes to their new position.
             var nodeUpdate = node.transition()
