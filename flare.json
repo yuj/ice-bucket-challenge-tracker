@@ -78,7 +78,21 @@
                             "name": "Sue Desmond-Hellmann", "url": "http://youtu.be/o_uFYHg4n9o"
                         },
                         {
-                            "name": "Melinda Gates", "url": "http://youtu.be/v5Vo9k6BPn4"
+                            "name": "Melinda Gates", "url": "http://youtu.be/v5Vo9k6BPn4",
+                            "children": [
+                                {
+                                    "name": "Katie Couric", "url": "http://youtu.be/-WwOZv-yuyU"
+                                },
+                                {
+                                    "name": "stephen colbert", "url": "http://youtu.be/WzCv_7deGe8"
+                                },
+                                {
+                                    "name": "Yuri Milner", "url": "http://youtu.be/Yj4YdA7oQiE"
+                                },
+                                {
+                                    "name": "Phoebe Gates", "url": ""
+                                }
+                            ]
                         },
                         {
                             "name": "Jocelyn Goldfein", "url": ""
