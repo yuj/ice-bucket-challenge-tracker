@@ -206,7 +206,15 @@
                             "name": "Jay Chou 周杰倫", "url": "http://youtu.be/ZTZ2Y3xJG08",
                             "children": [
                                 {
-                                    "name": "方文山", "url": "http://youtu.be/EIsVVHUGwTA"
+                                    "name": "方文山", "url": "http://youtu.be/EIsVVHUGwTA",
+                                    "children": [
+                                        {
+                                            "name": "九把刀", "url": "http://youtu.be/kLdaGXQgtro"
+                                        },
+                                        {
+                                            "name": "邱凱偉", "url": "http://youtu.be/2ZuAIXof4_M"
+                                        }
+                                    ]
                                 },
                                 {
                                     "name": "五月天", "url": "http://youtu.be/jBnkBcMkWm4"
